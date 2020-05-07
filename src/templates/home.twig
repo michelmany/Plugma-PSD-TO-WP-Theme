@@ -1,7 +1,82 @@
 {% extends "base.twig" %}
 
 {% block content %}
-	<section class="hero-home" style="background-image: url('{{ theme.link }}/src/images/hero-moto.jpg')">
+	<section class="hero-home" style="background-image: url('{{ theme.link }}/src/images/hero-home.jpg')">
 		<div class="container h-100"></div>
+	</section>
+
+	<section class="features">
+		<div class="container wrapper">
+			<div class="section-header">
+				<h2>Features</h2>
+				<h4>Take our best features</h4>
+			</div>
+
+			<div class="features__items row">
+				<div class="features__item col-lg-4">
+					<img class="features__item-icon" src="{{ theme.link }}/src/images/feature_01.png" alt="">
+					<h3 class="features__item-title">Amazing Ideas</h3>
+					<p class="features__item-copy">Sed sollicitudin ullamcorper diam, sed aliquam orci volutpat ut. Sed pellentesque ullamcorper eros ut rhoncus. Cras blandit commodo lorem et imperdiet. Aenean risus nulla, interdum at pretium sit amet, dictum ut justo. Cras vehicula ultrices tortor, quis iaculis purus ultricies ut. Mauris sed justo nec ligula dapibus cursus.</p>
+				</div>
+				<div class="features__item col-lg-4">
+					<img class="features__item-icon" src="{{ theme.link }}/src/images/feature_02.png" alt="">
+					<h3 class="features__item-title">Amazing Ideas</h3>
+					<p class="features__item-copy">Sed sollicitudin ullamcorper diam, sed aliquam orci volutpat ut. Sed pellentesque ullamcorper eros ut rhoncus. Cras blandit commodo lorem et imperdiet. Aenean risus nulla, interdum at pretium sit amet, dictum ut justo. Cras vehicula ultrices tortor, quis iaculis purus ultricies ut. Mauris sed justo nec ligula dapibus cursus.</p>
+				</div>
+				<div class="features__item col-lg-4">
+					<img class="features__item-icon" src="{{ theme.link }}/src/images/feature_03.png" alt="">
+					<h3 class="features__item-title">Amazing Ideas</h3>
+					<p class="features__item-copy">Sed sollicitudin ullamcorper diam, sed aliquam orci volutpat ut. Sed pellentesque ullamcorper eros ut rhoncus. Cras blandit commodo lorem et imperdiet. Aenean risus nulla, interdum at pretium sit amet, dictum ut justo. Cras vehicula ultrices tortor, quis iaculis purus ultricies ut. Mauris sed justo nec ligula dapibus cursus.</p>
+				</div>
+				<div class="features__item col-lg-4">
+					<img class="features__item-icon" src="{{ theme.link }}/src/images/feature_04.png" alt="">
+					<h3 class="features__item-title">Amazing Ideas</h3>
+					<p class="features__item-copy">Sed sollicitudin ullamcorper diam, sed aliquam orci volutpat ut. Sed pellentesque ullamcorper eros ut rhoncus. Cras blandit commodo lorem et imperdiet. Aenean risus nulla, interdum at pretium sit amet, dictum ut justo. Cras vehicula ultrices tortor, quis iaculis purus ultricies ut. Mauris sed justo nec ligula dapibus cursus.</p>
+				</div>
+				<div class="features__item col-lg-4">
+					<img class="features__item-icon" src="{{ theme.link }}/src/images/feature_05.png" alt="">
+					<h3 class="features__item-title">Amazing Ideas</h3>
+					<p class="features__item-copy">Sed sollicitudin ullamcorper diam, sed aliquam orci volutpat ut. Sed pellentesque ullamcorper eros ut rhoncus. Cras blandit commodo lorem et imperdiet. Aenean risus nulla, interdum at pretium sit amet, dictum ut justo. Cras vehicula ultrices tortor, quis iaculis purus ultricies ut. Mauris sed justo nec ligula dapibus cursus.</p>
+				</div>
+				<div class="features__item col-lg-4">
+					<img class="features__item-icon" src="{{ theme.link }}/src/images/feature_06.png" alt="">
+					<h3 class="features__item-title">Amazing Ideas</h3>
+					<p class="features__item-copy">Sed sollicitudin ullamcorper diam, sed aliquam orci volutpat ut. Sed pellentesque ullamcorper eros ut rhoncus. Cras blandit commodo lorem et imperdiet. Aenean risus nulla, interdum at pretium sit amet, dictum ut justo. Cras vehicula ultrices tortor, quis iaculis purus ultricies ut. Mauris sed justo nec ligula dapibus cursus.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="about-us">
+		<div class="container wrapper">
+			<div class="section-header">
+				<h2>About Us</h2>
+				<h4>Meet our team</h4>
+			</div>
+
+			<div class="team">
+				<div class="container">
+					<div class="row justify-content-between">
+						<div class="team__item-featured">
+							<img class="team__item-photo" src="{{ theme.link }}/src/images/team-01.jpg" alt="">
+						</div>
+						<div class="team__item">
+							<img class="team__item-photo" src="{{ theme.link }}/src/images/team-02.jpg" alt="">
+						</div>
+					</div>
+					<div class="row justify-content-between">
+						<div class="team__item">
+							<img class="team__item-photo" src="{{ theme.link }}/src/images/team-03.jpg" alt="">
+						</div>
+						<div class="team__item">
+							<img class="team__item-photo" src="{{ theme.link }}/src/images/team-04.jpg" alt="">
+						</div>
+						<div class="team__item">
+							<img class="team__item-photo" src="{{ theme.link }}/src/images/team-05.jpg" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</section>
 {% endblock %}

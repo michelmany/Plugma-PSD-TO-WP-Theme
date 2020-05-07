@@ -11,6 +11,41 @@ body
   &.menu-mobile--open
     overflow: hidden
 
+.container
+  max-width: 1200px
+
+.wrapper
+  padding-top: 2.375rem
+
+.section-header
+  text-align: center
+  margin-bottom: 3.43rem
+
+  h2
+    @include fontSize(30)
+    @extend %font-regular
+    padding: 0.8rem 1.75rem 
+    margin-bottom: 1.2rem
+    line-height: 100%
+    text-transform: uppercase
+    display: inline-block
+    position: relative
+
+    &:after
+      content: ""
+      bottom: 0
+      left: 50%
+      transform: translate(-50%)
+      position: absolute
+      width: 200px
+      border-bottom: 0.125rem solid $brand-blue
+
+  h4
+    @include fontSize(18)
+    @extend %font-light
+    text-transform: uppercase  
+    margin-bottom: 0  
+
 h1
   font-size: 2.8em
   color: $black
@@ -23,7 +58,6 @@ h2
   @extend %font-regular
 
 p
-  font-size: 1em
   color: #828282
   letter-spacing: 0
   line-height: 23px
