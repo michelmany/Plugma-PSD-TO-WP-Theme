@@ -1,7 +1,7 @@
 let mix = require("laravel-mix");
 
 let config = {
-  base_url: "yourlocalurl.local",
+  base_url: "kimitecprueba.local",
   watchFiles: ["src/*.*", "src/**/*.*", "dist/*.css"],
 };
 

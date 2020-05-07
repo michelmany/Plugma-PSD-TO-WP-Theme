@@ -1,11 +1,22 @@
 .navbar
+  position: absolute
+  width: 100%
+  border-bottom: 1px solid $brand-blue
+  @media (min-width: 992px)
+    height: $navbar-height
+
 
   &-dark
-    background-color: $black
+    background-color: rgba(#000, 0.41)
+
 
   .navbar-nav
     .nav-item
       .nav-link
+        color: $brand-blue
         text-transform: uppercase
-        font-weight: 700
-        font-size: 0.8em
+        @include fontSize(12)
+
+        @media (min-width: 992px)
+          @include fontSize(14)
+          margin: 0 22px

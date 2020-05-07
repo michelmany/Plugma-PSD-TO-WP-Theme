@@ -1,12 +1,9 @@
-#root
-  margin-top: $navbar-height
-
 body
   font-family: $font-family-sans-serif !important
   -webkit-font-smoothing: antialiased
   -moz-osx-font-smoothing: grayscale
-  color: $white
-  background: lighten($black, 5%)
+  color: $black
+  background: $white
   overflow-x: hidden
   font-size: 16px
   @extend %font-regular
@@ -22,10 +19,7 @@ h1
   @extend %font-regular
 
 h2
-  font-size: 1.75em
-  color: #565656
-  letter-spacing: 0
-  line-height: 36px
+  @include fontSize(30)
   @extend %font-regular
 
 p
