@@ -11,19 +11,83 @@
     &__item
       border: 1px solid #0098e0
       background: #f8f7f7
-      padding: 25px 26px
+      padding: 25px 26px 15px
       @media (min-width: 992px)
         width: 370px
 
+      h4
+        @include fontSize(24)
+        margin-bottom: 0
 
-      &-featured
-        border: 1px solid #0098e0
-        background: #f8f7f7
-        padding: 25px 26px        
-        @media (min-width: 992px)
-          width: 770px
+      h5
+        @include fontSize(18)
+        @extend %font-light
+        margin-bottom: 0
+
+      p
+        color: $black
+        @extend %font-light
+        line-height: 1.2em
+        @include fontSize(16)
+        hyphens: auto        
+
+      &-photo-content
+        display: flex
+        width: 256px
 
       &-photo
-        width: 100%
         max-width: 250px
         max-height: 250px
+        margin-bottom: 10px        
+        margin-right: 22px        
+
+    &__item-featured
+      border: 1px solid #0098e0
+      background: #f8f7f7
+      padding: 25px 26px 15px 
+      display: flex
+      @media (min-width: 992px)
+        width: 770px
+
+      &-content
+        width: calc(100% - 250px)
+        h4
+          @include fontSize(24)
+          margin-bottom: 0
+
+        h5
+          @include fontSize(18)
+          @extend %font-light
+          margin-bottom: 26px
+
+        p
+          color: $black
+          @extend %font-light
+          line-height: 1.2em
+          @include fontSize(16)
+          hyphens: auto               
+
+      &-photo-content
+        width: 256px
+        @media (min-width: 768px)
+          margin-right: 64px        
+
+      &-photo
+        max-width: 250px
+        max-height: 250px
+        margin-bottom: 10px
+
+    &__social-icons
+      display: flex
+      justify-content: space-between
+
+      &--vertical
+        height: 250px
+        flex-direction: column
+
+      &--horizontal
+        flex-direction: row
+
+        svg
+          width: 54px
+          height: auto

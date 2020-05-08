@@ -1,0 +1,47 @@
+.portfolio
+
+  .section-header
+    margin-bottom: 35px
+
+  &-grid__filter
+    display: flex
+    justify-content: center
+  
+    li
+      text-transform: uppercase
+      @include fontSize(18)
+      @extend %font-light
+      padding-left: 45px
+      padding-right: 45px
+      cursor: pointer
+      position: relative
+      margin: 0 -2px 15px
+
+      &.active
+        color: $brand-blue
+        z-index: 9
+
+      &:after
+        content: "I"
+        position: absolute
+        right: 0
+
+      &:before
+        content: "I"
+        position: absolute
+        left: 0
+
+  &-grid__item
+    margin-bottom: 10px
+    padding: 0
+    border: 0
+    min-height: 303px
+    background: #CCCCCC
+    width: 390px
+
+    &:hover
+      transition: 0.4s
+      background: $brand-blue
+    img
+      max-width: 100%
+

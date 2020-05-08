@@ -2,7 +2,22 @@
 
 {% block content %}
 	<section class="hero-home" style="background-image: url('{{ theme.link }}/src/images/hero-home.jpg')">
-		<div class="container h-100"></div>
+		<div class="container h-100">
+			<div class="hero-home__slider">
+				<div class="row">
+					<div class="col-md-6">
+						<img src="{{ theme.link }}/src/images/ldc.png" alt="">
+					</div>
+					<div class="col-md-6">
+						<div class="hero-home__slider-content">
+							<h2>GET THE BEST VERSION</h2>
+							<p>Mauris volutpat pharetra elementum. Praesent et molestie magna, sit amet sagittis ipsum. Suspendisse congue diam in fringilla hendrerit. Vestibulum posuere erat sit amet enim mollis imperdiet et nec dui. Ut et purus ac arcu lobortis dapibus at eu lacus. Vestibulum eget sapien bibendum, euismod dolor ut, varius erat. Mauris consectetur, risus vel porttitor tristique, ipsum felis venenatis quam, vulputate aliquam purus tellus vitae urna. In suscipit bibendum orci, vitae tristique lorem auctor vel. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+							<button class="btn btn-outline btn-lg">GET IT NOW</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</section>
 
 	<section class="features">
@@ -57,26 +72,223 @@
 			<div class="team">
 				<div class="container">
 					<div class="row justify-content-between">
+
 						<div class="team__item-featured">
-							<img class="team__item-photo" src="{{ theme.link }}/src/images/team-01.jpg" alt="">
+							<div class="team__item-featured-photo-content">
+								<img class="team__item-featured-photo" src="{{ theme.link }}/src/images/team-01.jpg" alt="">
+								{% include "partials/team-social-icons.twig" with {'format': 'horizontal'} %}
+							</div>
+
+							<div class="team__item-featured-content">
+								<h4>Michael Smith</h4>
+								<h5>Project Manager</h5>
+								<p>Elementum tempor metus donec ut molestie turpis. Vestibulum non nibh porttitor, eleifend purus eu, pulvinar orci. Quisque a gravida lorem, eu lobortis magna. Nulla auctor urna quis facilisis pretium. Cras facilisis risus sed mauris gravida, id vestibulum erat dictum. Nam in ante massa. Integer ultricies libero lorem.Nulla auctor urna quis facilisis pretium. Cras facilisis risus sed mauris gravida, id vestibulum erat dictum. Nam in ante massa.malesuada fames ac turpis.</p>
+							</div>
 						</div>
+
 						<div class="team__item">
-							<img class="team__item-photo" src="{{ theme.link }}/src/images/team-02.jpg" alt="">
+							<div class="team__item-photo-content">
+								<img class="team__item-photo" src="{{ theme.link }}/src/images/team-02.jpg" alt="">
+								{% include "partials/team-social-icons.twig" %}
+							</div>
+							<h4>Michael Smith</h4>
+							<h5>Project Manager</h5>
 						</div>
 					</div>
 					<div class="row justify-content-between">
 						<div class="team__item">
-							<img class="team__item-photo" src="{{ theme.link }}/src/images/team-03.jpg" alt="">
+							<div class="team__item-photo-content">
+								<img class="team__item-photo" src="{{ theme.link }}/src/images/team-03.jpg" alt="">
+								{% include "partials/team-social-icons.twig" %}
+							</div>
+							<h4>Michael Smith</h4>
+							<h5>Project Manager</h5>
 						</div>
 						<div class="team__item">
-							<img class="team__item-photo" src="{{ theme.link }}/src/images/team-04.jpg" alt="">
+							<div class="team__item-photo-content">
+								<img class="team__item-photo" src="{{ theme.link }}/src/images/team-04.jpg" alt="">
+								{% include "partials/team-social-icons.twig" %}
+							</div>
+							<h4>Michael Smith</h4>
+							<h5>Project Manager</h5>
 						</div>
 						<div class="team__item">
-							<img class="team__item-photo" src="{{ theme.link }}/src/images/team-05.jpg" alt="">
+							<div class="team__item-photo-content">
+								<img class="team__item-photo" src="{{ theme.link }}/src/images/team-05.jpg" alt="">
+								{% include "partials/team-social-icons.twig" %}
+							</div>
+							<h4>Michael Smith</h4>
+							<h5>Project Manager</h5>
 						</div>
 					</div>
 				</div>
 			</div>
+		</div>
+	</section>
+
+	<section class="gallery">
+		<div class="container wrapper">
+			<div class="section-header">
+				<h2>Gallery</h2>
+				<h4>See our best projects</h4>
+			</div>
+			<div class="gallery-grid">
+				<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 no-gutters">
+					<div class="col">
+						<img src="https://via.placeholder.com/447x389.jpg" alt="">
+					</div>
+					<div class="col col-">
+						<img src="https://via.placeholder.com/447x389.jpg" alt="">
+					</div>
+					<div class="col">
+						<img src="https://via.placeholder.com/447x389.jpg" alt="">
+					</div>
+					<div class="col">
+						<img src="https://via.placeholder.com/447x389.jpg" alt="">
+					</div>
+					<div class="col">
+						<img src="https://via.placeholder.com/447x389.jpg" alt="">
+					</div>
+					<div class="col">
+						<img src="https://via.placeholder.com/447x389.jpg" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="twitter-feed" style="background-image: url('{{ theme.link }}/src/images/placeholder-twitter-bg.jpg')">
+		<div class="container wrapper">
+			<span class="icon-item">
+				<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="54" height="54" viewbox="0 0 1024 1024">
+					<path fill="#fff" d="M0 1.403h1022.597v1022.597h-1022.597v-1022.597z"></path>
+					<path fill="#00bbf5" d="M207.227 609.659s120.168 104.505 215.723 0.91c-9.761-0.138-18.81-3.068-26.417-8.025l0.192 0.117c-6.217-5.888-10.785-13.458-12.977-21.981l-0.070-0.32s29.734-16.631 18.565-29.165c0 0-65.745-1.308-69.423-41.017l38.628-24.936c-4.404 1.994-9.55 3.156-14.967 3.156-5.515 0-10.749-1.204-15.453-3.364l0.231 0.095s-38.988-27.951-31.554-56.567l32.559-3.319s-56.491-40.164-40.751-71.016c0 0 5.442-26.548 192.322 97.545 0 0 32.958-117.267 93.81-143.057 4.586 1.899 8.167 5.449 10.061 9.892l0.046 0.121c3.91-9.11 10.962-16.248 19.762-20.174l0.244-0.097s13.767 12.098 4.817 18.963c0 0 23.154-15.853 34.456-7.813 0 0-0.929 14.089-34.133 31.63 0 0 86.376 4.798 116.527 119.979 7.835 2.509 16.848 3.955 26.199 3.955 17.179 0 33.218-4.881 46.806-13.333l-0.377 0.218s2.92 17.067-51.674 41.093c0 0 5.082 8.211 50.859 1.896 0 0-0.36 34.133-72.761 33.792 0 0-61.137 177.152-209.768 201.557-180.66 29.753-307.541-60.549-321.479-120.737z"></path>
+				</svg>
+			</span>
+			<p>2 Hours ago</p>
+			<p>
+				<h4>Aliquam posuere erat et orci eleifend cursus. Nullam tempus odio sem, lacinia pellentesque Vestibulum ultricies bibendum lorem, a sollicitudin tellus euismod vel.</h4>
+			</p>
+			<button class="btn btn-outline btn-lg">View more</button>
+		</div>
+	</section>
+
+	<section class="portfolio">
+		<div class="container wrapper">
+			<div class="section-header">
+				<h2>Portfolio</h2>
+				<h4>See our work</h4>
+			</div>
+
+			<div class="portfolio-grid">
+
+				<ul class="portfolio-grid__filter list-unstyled">
+					<li data-filter="*" class="active">All</li>
+					<li data-filter="website">Website</li>
+					<li data-filter="photoshop">Photoshop</li>
+					<li data-filter="print">Print Design</li>
+					<li data-filter="photography">Photography</li>
+				</ul>
+
+				<div class="portfolio-grid__items row">
+
+					<div class="portfolio-grid__item col-md-6 col-xl-4 photography"></div>
+					<div class="portfolio-grid__item col-md-6 col-xl-4 photoshop"></div>
+					<div class="portfolio-grid__item col-md-6 col-xl-4 print"></div>
+					<div
+						class="portfolio-grid__item col-md-6 col-xl-4 photoshop">{# <img src="https://via.placeholder.com/384x303.jpg" alt=""> #}
+					</div>
+					<div
+						class="portfolio-grid__item col-md-6 col-xl-4 website">{# <img src="https://via.placeholder.com/384x303.jpg" alt=""> #}
+					</div>
+					<div
+						class="portfolio-grid__item col-md-6 col-xl-4 photography">{# <img src="https://via.placeholder.com/384x303.jpg" alt=""> #}
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="recent-work">
+		<div class="container wrapper">
+			<div class="section-header">
+				<h2>Recent work</h2>
+				<h4>WHAT WE’VE DONE SO FAR</h4>
+
+				<div class="recent-work__slider">
+					<img src="https://via.placeholder.com/1170x555.jpg" alt="">
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<section class="services">
+		<div class="container wrapper">
+			<div class="section-header">
+				<h2>Services</h2>
+				<h4>TEAM WITH ALL KINDS OF GREAT PERSONALITIES</h4>
+			</div>
+
+			<div class="features__items row">
+				<div class="features__item col-lg-4">
+					<img class="features__item-icon" src="{{ theme.link }}/src/images/icon-service-01.jpg" alt="">
+					<h3 class="features__item-title">Amazing Ideas</h3>
+					<p class="features__item-copy">Sed sollicitudin ullamcorper diam, sed aliquam orci volutpat ut. Sed pellentesque ullamcorper eros ut rhoncus. Cras blandit commodo lorem et imperdiet. Aenean risus nulla, interdum at pretium sit amet, dictum ut justo. Cras vehicula ultrices tortor, quis iaculis purus ultricies ut. Mauris sed justo nec ligula dapibus cursus.</p>
+				</div>
+				<div class="features__item col-lg-4">
+					<img class="features__item-icon" src="{{ theme.link }}/src/images/icon-service-02.jpg" alt="">
+					<h3 class="features__item-title">Amazing Ideas</h3>
+					<p class="features__item-copy">Sed sollicitudin ullamcorper diam, sed aliquam orci volutpat ut. Sed pellentesque ullamcorper eros ut rhoncus. Cras blandit commodo lorem et imperdiet. Aenean risus nulla, interdum at pretium sit amet, dictum ut justo. Cras vehicula ultrices tortor, quis iaculis purus ultricies ut. Mauris sed justo nec ligula dapibus cursus.</p>
+				</div>
+				<div class="features__item col-lg-4">
+					<img class="features__item-icon" src="{{ theme.link }}/src/images/icon-service-03.jpg" alt="">
+					<h3 class="features__item-title">Amazing Ideas</h3>
+					<p class="features__item-copy">Sed sollicitudin ullamcorper diam, sed aliquam orci volutpat ut. Sed pellentesque ullamcorper eros ut rhoncus. Cras blandit commodo lorem et imperdiet. Aenean risus nulla, interdum at pretium sit amet, dictum ut justo. Cras vehicula ultrices tortor, quis iaculis purus ultricies ut. Mauris sed justo nec ligula dapibus cursus.</p>
+				</div>
+				<div class="features__item col-lg-4">
+					<img class="features__item-icon" src="{{ theme.link }}/src/images/icon-service-04.jpg" alt="">
+					<h3 class="features__item-title">Amazing Ideas</h3>
+					<p class="features__item-copy">Sed sollicitudin ullamcorper diam, sed aliquam orci volutpat ut. Sed pellentesque ullamcorper eros ut rhoncus. Cras blandit commodo lorem et imperdiet. Aenean risus nulla, interdum at pretium sit amet, dictum ut justo. Cras vehicula ultrices tortor, quis iaculis purus ultricies ut. Mauris sed justo nec ligula dapibus cursus.</p>
+				</div>
+				<div class="features__item col-lg-4">
+					<img class="features__item-icon" src="{{ theme.link }}/src/images/icon-service-05.jpg" alt="">
+					<h3 class="features__item-title">Amazing Ideas</h3>
+					<p class="features__item-copy">Sed sollicitudin ullamcorper diam, sed aliquam orci volutpat ut. Sed pellentesque ullamcorper eros ut rhoncus. Cras blandit commodo lorem et imperdiet. Aenean risus nulla, interdum at pretium sit amet, dictum ut justo. Cras vehicula ultrices tortor, quis iaculis purus ultricies ut. Mauris sed justo nec ligula dapibus cursus.</p>
+				</div>
+				<div class="features__item col-lg-4">
+					<img class="features__item-icon" src="{{ theme.link }}/src/images/icon-service-06.jpg" alt="">
+					<h3 class="features__item-title">Amazing Ideas</h3>
+					<p class="features__item-copy">Sed sollicitudin ullamcorper diam, sed aliquam orci volutpat ut. Sed pellentesque ullamcorper eros ut rhoncus. Cras blandit commodo lorem et imperdiet. Aenean risus nulla, interdum at pretium sit amet, dictum ut justo. Cras vehicula ultrices tortor, quis iaculis purus ultricies ut. Mauris sed justo nec ligula dapibus cursus.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="pricing-table">
+		<div class="container wrapper">
+			<div class="section-header">
+				<h2>Price Table</h2>
+				<h4>GET STARTED WITH OUR PEKAGES</h4>
+			</div>
+		</div>
+	</section>
+
+	<section class="contact-us">
+		<div class="container wrapper">
+			<div class="section-header">
+				<h2>Contact us</h2>
+				<h4>Get in touch with us</h4>
+			</div>
+		</div>
+	</section>
+
+	<section class="make-big" style="background-image: url('{{ theme.link }}/src/images/placeholder-make-big-bg.jpg')">
+		<div class="container">
+			<h2 class="make-big__headline">MAKE BIG YOUR BUSINESS</h2>
+			<h4 class="make-big__subline">CONVERT VISITORS INTO CUSTOMERS AND GENERATE MORE SALES</h4>
+			<button class="btn btn-outline">Purchase</button>
 		</div>
 	</section>
 {% endblock %}

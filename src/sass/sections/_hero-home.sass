@@ -1,3 +1,25 @@
 .hero-home
   background: $black center / cover no-repeat
   height: 840px
+  color: $white
+
+  &__slider
+    position: relative
+    top: 50%
+    transform: translateY(-35%)
+
+    &-content
+     padding-top: 80px
+
+    h2
+      color: $white
+      @include fontSize(36)
+      font-family: 'Quicksand', sans-serif
+      margin-bottom: 12px
+
+    p
+      color: $white
+      @include fontSize(14)
+      @extend %font-regular
+      line-height: 1.2em
+      max-width: 510px

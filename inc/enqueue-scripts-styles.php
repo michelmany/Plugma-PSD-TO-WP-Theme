@@ -49,13 +49,13 @@ function enqueue_scripts_styles() {
       true 
     );
 
-    // wp_enqueue_script( 
-    //   'isotope-layout', 
-    //   'https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js', 
-    //   array( 'jquery' ), 
-    //   $version, 
-    //   false 
-    // );
+    wp_enqueue_script( 
+      'isotope-layout', 
+      'https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js', 
+      array( 'jquery' ), 
+      $version, 
+      false 
+    );
 
     $translation_array = array( 'theme_path' => get_stylesheet_directory_uri() );
     wp_localize_script( 'wpstarter-main-scripts', 'theme_vars', $translation_array );

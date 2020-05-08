@@ -1,0 +1,20 @@
+.make-big
+  text-align: center
+  height: 512px
+  background: $black center / cover no-repeat
+
+  .container
+    position: relative
+    top: 50%
+    transform: translateY(-50%)
+
+  &__headline
+    color: $white
+    @extend %font-semibold
+    @include fontSize(48)
+
+  &__subline
+    color: $white
+    @extend %font-light
+    @include fontSize(16)    
+    margin-bottom: 3rem
