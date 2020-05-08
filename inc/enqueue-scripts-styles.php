@@ -8,7 +8,7 @@ function enqueue_scripts_styles() {
     wp_enqueue_style( 
       'google-fonts', 
       'https://fonts.googleapis.com/css2?family=Quicksand&family=Raleway:wght@300;500;600&display=swap',
-      array(),
+      array()
     );
 
     wp_enqueue_style( 

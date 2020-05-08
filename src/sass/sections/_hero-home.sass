@@ -1,15 +1,23 @@
 .hero-home
   background: $black center / cover no-repeat
-  height: 840px
   color: $white
+  height: 100vh
+  @media (min-width: 992px)
+    height: 840px
 
   &__slider
     position: relative
-    top: 50%
-    transform: translateY(-35%)
+    top: 100px
+
+    @media (min-width: 768px)
+      top: 50%
+      transform: translateY(-35%)
 
     &-content
-     padding-top: 80px
+      padding-top: 20px
+      @media (min-width: 768px)
+        padding-top: 80px
+      
 
     h2
       color: $white
@@ -23,3 +31,16 @@
       @extend %font-regular
       line-height: 1.2em
       max-width: 510px
+      margin-bottom: 25px
+      margin-left: auto
+      margin-right: auto
+
+      @media (min-width: 768px)
+        margin-left: 0
+
+    &-item
+      .item-image
+        max-width: 50%
+
+        @media (min-width: 768px)
+          max-width: 100%

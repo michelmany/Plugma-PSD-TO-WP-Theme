@@ -12,3 +12,26 @@
   &:hover
     background: $main-color
     color: $white
+
+.btn-outline
+  border: 2px solid $white
+  background: transparent
+  color: $white
+  text-transform: uppercase
+  border-radius: 0
+  padding-top: 0.6rem
+  padding-bottom: 0.6rem
+  padding-left: 2rem
+  padding-right: 2rem
+  @include fontSize(14)
+
+  &:hover
+    background: $white
+    color: $black
+
+  &.btn-lg
+    @include fontSize(24)
+
+  &.btn-md
+    @include fontSize(18)
+

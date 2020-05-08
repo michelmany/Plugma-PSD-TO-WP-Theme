@@ -4,18 +4,22 @@
 	<section class="hero-home" style="background-image: url('{{ theme.link }}/src/images/hero-home.jpg')">
 		<div class="container h-100">
 			<div class="hero-home__slider">
-				<div class="row">
-					<div class="col-md-6">
-						<img src="{{ theme.link }}/src/images/ldc.png" alt="">
-					</div>
-					<div class="col-md-6">
-						<div class="hero-home__slider-content">
-							<h2>GET THE BEST VERSION</h2>
-							<p>Mauris volutpat pharetra elementum. Praesent et molestie magna, sit amet sagittis ipsum. Suspendisse congue diam in fringilla hendrerit. Vestibulum posuere erat sit amet enim mollis imperdiet et nec dui. Ut et purus ac arcu lobortis dapibus at eu lacus. Vestibulum eget sapien bibendum, euismod dolor ut, varius erat. Mauris consectetur, risus vel porttitor tristique, ipsum felis venenatis quam, vulputate aliquam purus tellus vitae urna. In suscipit bibendum orci, vitae tristique lorem auctor vel. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-							<button class="btn btn-outline btn-lg">GET IT NOW</button>
+
+				<div class="hero-home__slider-item">
+					<div class="row">
+						<div class="col-md-6 text-center">
+							<img class="item-image" src="{{ theme.link }}/src/images/ldc.png" alt="">
+						</div>
+						<div class="col-md-6">
+							<div class="hero-home__slider-content text-center text-md-left">
+								<h2>GET THE BEST VERSION</h2>
+								<p>Mauris volutpat pharetra elementum. Praesent et molestie magna, sit amet sagittis ipsum. Suspendisse congue diam in fringilla hendrerit. Vestibulum posuere erat sit amet enim mollis imperdiet et nec dui. Ut et purus ac arcu lobortis dapibus at eu lacus. Vestibulum eget sapien bibendum, euismod dolor ut, varius erat. Mauris consectetur, risus vel porttitor tristique, ipsum felis venenatis quam, vulputate aliquam purus tellus vitae urna. In suscipit bibendum orci, vitae tristique lorem auctor vel. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+								<button class="btn btn-outline btn-lg">GET IT NOW</button>
+							</div>
 						</div>
 					</div>
 				</div>
+
 			</div>
 		</div>
 	</section>
@@ -133,24 +137,24 @@
 				<h4>See our best projects</h4>
 			</div>
 			<div class="gallery-grid">
-				<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 no-gutters">
+				<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 no-gutters text-center">
 					<div class="col">
-						<img src="https://via.placeholder.com/447x389.jpg" alt="">
+						<img src="{{ theme.link }}/src/images/gallery-01.jpg" alt="">
 					</div>
 					<div class="col col-">
-						<img src="https://via.placeholder.com/447x389.jpg" alt="">
+						<img src="{{ theme.link }}/src/images/gallery-02.jpg" alt="">
 					</div>
 					<div class="col">
-						<img src="https://via.placeholder.com/447x389.jpg" alt="">
+						<img src="{{ theme.link }}/src/images/gallery-03.jpg" alt="">
 					</div>
 					<div class="col">
-						<img src="https://via.placeholder.com/447x389.jpg" alt="">
+						<img src="{{ theme.link }}/src/images/gallery-04.jpg" alt="">
 					</div>
 					<div class="col">
-						<img src="https://via.placeholder.com/447x389.jpg" alt="">
+						<img src="{{ theme.link }}/src/images/gallery-05.jpg" alt="">
 					</div>
 					<div class="col">
-						<img src="https://via.placeholder.com/447x389.jpg" alt="">
+						<img src="{{ theme.link }}/src/images/gallery-06.jpg" alt="">
 					</div>
 				</div>
 			</div>
@@ -169,7 +173,7 @@
 			<p>
 				<h4>Aliquam posuere erat et orci eleifend cursus. Nullam tempus odio sem, lacinia pellentesque Vestibulum ultricies bibendum lorem, a sollicitudin tellus euismod vel.</h4>
 			</p>
-			<button class="btn btn-outline btn-lg">View more</button>
+			<button class="btn btn-outline btn-md">View more</button>
 		</div>
 	</section>
 
@@ -184,10 +188,10 @@
 
 				<ul class="portfolio-grid__filter list-unstyled">
 					<li data-filter="*" class="active">All</li>
-					<li data-filter="website">Website</li>
-					<li data-filter="photoshop">Photoshop</li>
-					<li data-filter="print">Print Design</li>
-					<li data-filter="photography">Photography</li>
+					<li data-filter=".website">Website</li>
+					<li data-filter=".photoshop">Photoshop</li>
+					<li data-filter=".print">Print Design</li>
+					<li data-filter=".photography">Photography</li>
 				</ul>
 
 				<div class="portfolio-grid__items row">
