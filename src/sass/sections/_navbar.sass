@@ -15,11 +15,22 @@
 
   .navbar-nav
     .nav-item
+      &:hover,
+      &.active,
+      &:active
+        .nav-link
+          background: $brand-blue
+          color: $white   
+
       .nav-link
+        transition: 0.4s
+        display: flex
+        align-items: center
+        @include fontSize(12)
         color: $brand-blue
         text-transform: uppercase
-        @include fontSize(12)
 
         @media (min-width: 992px)
           @include fontSize(14)
-          margin: 0 22px
+          height: 143px
+          padding: 0 24px
