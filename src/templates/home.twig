@@ -3,7 +3,7 @@
 {% block content %}
 	<section id="hero-home" class="hero-home" style="background-image: url('{{ theme.link }}/src/images/hero-home.jpg')">
 		<div class="container h-100">
-			<div class="hero-home__slider">
+			<div class="hero-home__slider slick-slider">
 
 				<div class="hero-home__slider-item">
 					<div class="row">
@@ -13,6 +13,21 @@
 						<div class="col-md-6">
 							<div class="hero-home__slider-content text-center text-md-left">
 								<h2>GET THE BEST VERSION</h2>
+								<p>Mauris volutpat pharetra elementum. Praesent et molestie magna, sit amet sagittis ipsum. Suspendisse congue diam in fringilla hendrerit. Vestibulum posuere erat sit amet enim mollis imperdiet et nec dui. Ut et purus ac arcu lobortis dapibus at eu lacus. Vestibulum eget sapien bibendum, euismod dolor ut, varius erat. Mauris consectetur, risus vel porttitor tristique, ipsum felis venenatis quam, vulputate aliquam purus tellus vitae urna. In suscipit bibendum orci, vitae tristique lorem auctor vel. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+								<button class="btn btn-outline btn-lg">GET IT NOW</button>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="hero-home__slider-item">
+					<div class="row">
+						<div class="col-md-6 text-center">
+							<img class="item-image" src="{{ theme.link }}/src/images/ldc.png" alt="">
+						</div>
+						<div class="col-md-6">
+							<div class="hero-home__slider-content text-center text-md-left">
+								<h2>GET THE BEST VERSION 02</h2>
 								<p>Mauris volutpat pharetra elementum. Praesent et molestie magna, sit amet sagittis ipsum. Suspendisse congue diam in fringilla hendrerit. Vestibulum posuere erat sit amet enim mollis imperdiet et nec dui. Ut et purus ac arcu lobortis dapibus at eu lacus. Vestibulum eget sapien bibendum, euismod dolor ut, varius erat. Mauris consectetur, risus vel porttitor tristique, ipsum felis venenatis quam, vulputate aliquam purus tellus vitae urna. In suscipit bibendum orci, vitae tristique lorem auctor vel. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
 								<button class="btn btn-outline btn-lg">GET IT NOW</button>
 							</div>
@@ -221,8 +236,10 @@
 				<h2>Recent work</h2>
 				<h4>WHAT WE’VE DONE SO FAR</h4>
 
-				<div class="recent-work__slider">
-					<img src="https://via.placeholder.com/1170x555.jpg" alt="">
+				<div class="recent-work__slider slick-slider">
+					<div><img src="https://via.placeholder.com/1170x555.jpg" alt=""></div>
+					<div><img src="https://via.placeholder.com/1170x555.jpg" alt=""></div>
+					<div><img src="https://via.placeholder.com/1170x555.jpg" alt=""></div>
 				</div>
 
 			</div>
@@ -271,14 +288,14 @@
 		</div>
 	</section>
 
-	<section class="pricing-table">
-		<div class="container wrapper">
-			<div class="section-header">
-				<h2>Price Table</h2>
-				<h4>GET STARTED WITH OUR PEKAGES</h4>
-			</div>
-		</div>
-	</section>
+	{# <section class="pricing-table">
+											<div class="container wrapper">
+												<div class="section-header">
+													<h2>Price Table</h2>
+													<h4>GET STARTED WITH OUR PEKAGES</h4>
+												</div>
+											</div>
+										</section> #}
 
 	<section id="contact" class="contact-us">
 		<div class="container wrapper">

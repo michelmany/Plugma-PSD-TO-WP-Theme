@@ -1,3 +1,6 @@
+import "slick-carousel";
+
+// Isotope Layout
 const grid = document.querySelector(".portfolio-grid__items");
 const gridFilterButtons = document.querySelectorAll(".portfolio-grid__filter li");
 
@@ -14,6 +17,7 @@ gridFilterButtons.forEach((filterButton) => {
   );
 });
 
+// Go to Hash
 $('a[href*="#"]')
   .not('[href="#"]')
   .not('[href="#0"]')
@@ -36,3 +40,20 @@ $('a[href*="#"]')
       }
     }
   });
+
+// Slick Slider
+
+function initSlider() {
+  $(".slick-slider").slick({
+    dots: false,
+    arrows: false,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+  });
+}
+
+$(window).ready(function() {
+  initSlider();
+});

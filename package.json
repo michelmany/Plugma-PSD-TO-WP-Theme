@@ -36,5 +36,8 @@
     "sass-loader": "^8.0.2",
     "svgo-loader": "^2.2.1",
     "vue-template-compiler": "^2.6.11"
+  },
+  "dependencies": {
+    "slick-carousel": "^1.8.1"
   }
 }
